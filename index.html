@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="css/index.css"/>
+    <!--Plugin Styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.css" />
+	<title>Pureskill.gg</title>
+</head>
+
+<body>
+
+	<header>
+		<nav>
+			<ul>
+				<li>Home</li>
+			</ul>
+		</nav>
+	</header>
+	<div id="fullpage">
+
+        <div class="section">
+            <section>
+                <div class="PageContainer">
+                    <h1>Pureskill.gg</h1>
+                    <div class="Icon">
+                        <img src="img/Logo.JPG" alt="Logo" style="border-radius: 10px 10px">
+                    </div>
+                    <p>
+                        The world’s first automated coach for CS:GO.
+                        Using machine learning, AI, and statistics to show you what you’re doing wrong and how to fix it.
+                    </p>
+                    <button>Sign Up</button>
+                    <p>
+                        We are currently in open alpha and
+                        you can currently use our 2D demo viewer
+                        to analyze your own games
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <div class="section">
+            <section>
+                <div class="PageContainer">
+
+                    <h1>WHAT IS IT?</h1>
+
+                    <p>
+                        Pureskill.gg is a service that will take a CS:GO player’s demo, pull it apart, analyze what happened, and
+                        provide tailored feedback to help them understand what they are doing wrong and how to fix it.
+                    </p>
+                 
+                    
+                    <div class="IconsContainer">
+                        <div class="Icon">
+                            <img src="img/choice.svg" alt="Mistake Detection">
+                            <h2>Mistake Detection</h2>
+                        </div>
+                        <div class="Icon">
+                            <img src="img/online-game.svg" alt="Analytics">
+                            <h2>Analytics</h2>
+                        </div>
+                        <div class="Icon">
+                            <img src="img/rol-game.svg" alt="Skill Comparison">
+                            <h2>Skill Comparison</h2>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <div class="section">
+                <section>
+                
+                    <div class="PageContainer">
+                        <h1>HOW DOES IT WORK?</h1>
+                        
+                        <div class="TabbedFeaturesContainer">
+                            <div class="tab">
+                            <button class="tablinks" onclick="openFeature(event, 'MistakeDetection')" id="defaultOpen">Mistake Detection</button>
+                            <button class="tablinks" onclick="openFeature(event, 'SkillAnalysis')">Skill Analysis</button>
+                            <button class="tablinks" onclick="openFeature(event, 'PlayerComparisons')">Player Comparisons</button>
+                            <button class="tablinks" onclick="openFeature(event, 'ImprovementPlan')">Improvement Plan</button>
+                            </div>
+                            
+                            <div id="MistakeDetection" class="tabcontent">
+                            <img src="img/MistakeAnalysis.JPG" alt="Mistake Detection">
+                            </div>
+                            
+                            <div id="SkillAnalysis" class="tabcontent">
+                            <img src="img/SkillAnalysis.JPG" alt="Skill Analysis">
+                            </div>
+                            
+                            <div id="PlayerComparisons" class="tabcontent">
+                            <img src="img/PlayerComparison.jpg" alt="Player Comparisons">
+                            </div>
+
+                            <div id="ImprovementPlan" class="tabcontent">
+                            <img src="img/ImprovementPlan.jpg" alt="Improvement Plan">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        <div class="section">
+            <section>
+                <div class="PageContainer">
+
+                    <h1>HOW CAN IT HELP?</h1>
+                    <p>
+
+                    </p>
+                    
+                    <div class="IconsContainer">
+                        <div class="Icon">
+                            <h2>Step 1.</h2>
+                            <p>
+                                Get your post match analysis. Review and focus on 
+                                key performance indicators.
+                            </p>
+                            <img src="img/data-chart.svg" alt="Data Chart">
+                        </div>
+                        <div class="Icon">
+                            <h2>Step 2.</h2>
+                            <p>
+                                Watch your mistakes unfold onscreen and
+                                how your opponents took advantage of it.
+                            </p>
+                            <img src="img/movie.svg" alt="Movie">
+                        </div>
+                        <div class="Icon">
+                            <h2>Step 3.</h2>
+                            <p>
+                                Get actionable plans on how to 
+                                fix your mistakes and improve your play.
+                            </p>
+                            <img src="img/strategy.svg" alt="Strategy">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <div class="section">
+            <section>
+                <div class="PageContainer">
+                    <h1>CONTACT US</h1>
+                    <form>
+                        Email: <br>
+                        <input type="text" name="email">
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                
+            </section>
+        </div>
+
+        
+
+    </div>
+
+	<aside>
+		<h2>About section</h2>
+		<p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+	</aside>
+
+	<footer>
+		<p>Copyright 2019 Pureskill.gg</p>
+    </footer>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.js"></script>
+
+    <script>
+        new fullpage('#fullpage', {
+            //options here
+            autoScrolling:true,
+            scrollHorizontally: true
+        });
+    </script>
+
+    <script>
+        function openFeature(evt, feature) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(feature).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>
